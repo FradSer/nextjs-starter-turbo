@@ -1,7 +1,7 @@
 {
   "name": "nextjs-starter",
-  "version": "0.1.0",
-  "description": "Next.js starter by Frad.",
+  "version": "0.2.0",
+  "description": "Next.js starter by Frad. React v18.0 .",
   "repository": "https://github.com/FradSer/nextjs-starter",
   "author": "Frad LEE <fradser@gmail.com>",
   "license": "MIT",
@@ -30,10 +30,7 @@
     "typescript": "^4.6.3"
   },
   "eslintConfig": {
-    "extends": [
-      "next",
-      "next/core-web-vitals"
-    ],
+    "extends": ["next", "next/core-web-vitals"],
     "rules": {
       "@next/next/no-img-element": "off"
     }
