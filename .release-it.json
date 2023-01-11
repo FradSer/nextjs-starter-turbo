@@ -1,6 +1,7 @@
 {
   "git": {
-    "commitMessage": "chore(yarn): bump to v${version}"
+    "commitMessage": "chore(yarn): bump to v${version}",
+    "tagName": "v${version}"
   },
   "github": {
     "release": false
