@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 const SkeletonCard = () => (
   <>
@@ -53,7 +53,7 @@ const SkeletonCard = () => (
       }
     `}</style>
   </>
-);
+)
 
 export default function Page() {
   return (
@@ -75,5 +75,5 @@ export default function Page() {
         }
       `}</style>
     </div>
-  );
+  )
 }

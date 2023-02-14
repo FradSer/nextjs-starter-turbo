@@ -1,13 +1,13 @@
-import { fetchSubCategory, type PageProps } from '@/lib/getCategories';
-import { Boundary } from '@/ui/Boundary';
-import { use } from 'react';
-import { Counter } from '../../ClickCounter';
+import { fetchSubCategory, type PageProps } from '@/lib/getCategories'
+import { Boundary } from '@/ui/Boundary'
+import { use } from 'react'
+import { Counter } from '../../ClickCounter'
 
 export default function Page({ params }: PageProps) {
   const category = use(
-    fetchSubCategory(params.categorySlug, params.subCategorySlug),
-  );
-  if (!category) return null;
+    fetchSubCategory(params.categorySlug, params.subCategorySlug)
+  )
+  if (!category) return null
 
   return (
     <Boundary labels={['Page [Server Component]']} animateRerendering={false}>
@@ -17,5 +17,5 @@ export default function Page({ params }: PageProps) {
         <Counter />
       </div>
     </Boundary>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import { TabNavItem } from '@/ui/TabNavItem';
-import { useSelectedLayoutSegments } from 'next/navigation';
+import { TabNavItem } from '@/ui/TabNavItem'
+import { useSelectedLayoutSegments } from 'next/navigation'
 
 const items = [
   {
@@ -28,10 +28,10 @@ const items = [
     name: 'Tailwind CSS',
     slug: 'tailwind',
   },
-];
+]
 
 const StylingNav = () => {
-  const [selectedLayoutSegments = ''] = useSelectedLayoutSegments();
+  const [selectedLayoutSegments = ''] = useSelectedLayoutSegments()
 
   return (
     <div className="flex items-center space-x-4">
@@ -45,7 +45,7 @@ const StylingNav = () => {
         </TabNavItem>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default StylingNav;
+export default StylingNav

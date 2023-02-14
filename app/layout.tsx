@@ -1,12 +1,12 @@
-import '@/styles/globals.css';
-import React from 'react';
-import AddressBar from '@/ui/AddressBar';
-import GlobalNav from './GlobalNav';
+import '@/styles/globals.css'
+import React from 'react'
+import AddressBar from '@/ui/AddressBar'
+import GlobalNav from './GlobalNav'
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html>
@@ -54,5 +54,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  );
+  )
 }

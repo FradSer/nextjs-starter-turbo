@@ -1,11 +1,11 @@
-import { fetchCategoryBySlug, PageProps } from '@/lib/getCategories';
-import { Boundary } from '@/ui/Boundary';
-import { use } from 'react';
-import { Counter } from '../ClickCounter';
+import { fetchCategoryBySlug, PageProps } from '@/lib/getCategories'
+import { Boundary } from '@/ui/Boundary'
+import { use } from 'react'
+import { Counter } from '../ClickCounter'
 
 export default function Page({ params }: PageProps) {
-  const category = use(fetchCategoryBySlug(params.categorySlug));
-  if (!category) return null;
+  const category = use(fetchCategoryBySlug(params.categorySlug))
+  if (!category) return null
 
   return (
     <Boundary labels={['Page [Server Component]']} animateRerendering={false}>
@@ -17,5 +17,5 @@ export default function Page({ params }: PageProps) {
         <Counter />
       </div>
     </Boundary>
-  );
+  )
 }

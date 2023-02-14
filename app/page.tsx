@@ -1,5 +1,5 @@
-import { demos } from '@/lib/demos';
-import Link from 'next/link';
+import { demos } from '@/lib/demos'
+import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -7,7 +7,7 @@ export default function Page() {
       <div className="space-y-8 text-white">
         {demos
           .filter((section) =>
-            section.items.some((x) => typeof x.isDisabled === 'undefined'),
+            section.items.some((x) => typeof x.isDisabled === 'undefined')
           )
           .map((section) => {
             return (
@@ -34,13 +34,13 @@ export default function Page() {
                             </div>
                           ) : null}
                         </Link>
-                      );
+                      )
                     })}
                 </div>
               </div>
-            );
+            )
           })}
       </div>
     </div>
-  );
+  )
 }

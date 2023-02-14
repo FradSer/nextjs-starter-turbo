@@ -1,5 +1,5 @@
-import React from 'react';
-import StylingNav from './StylingNav';
+import React from 'react'
+import StylingNav from './StylingNav'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,5 +7,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <StylingNav />
       <div>{children}</div>
     </div>
-  );
+  )
 }
